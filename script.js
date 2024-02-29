@@ -117,13 +117,12 @@ function FetchImages(images) {
 
 
 function remove(id) {
-    var parent = document.querySelector(`.${id}`);
+    var parent = document.querySelector(`.parent-${id}`);
     parent.remove()
 };
 
 async function fetchRandomImage() {
     try {
-        // const response = await fetch('https://source.unsplash.com/random');
         const imageUrl = response.url;
         return imageUrl;
     } catch (error) {
