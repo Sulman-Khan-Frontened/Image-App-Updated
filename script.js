@@ -84,7 +84,7 @@ function FetchImages(images) {
                         <ul class="list">
                             <li><a href="${image.user.links.html}">Go To Profile</a></li>
                             <li onclick="addToFav(${index})">Add To Favorite List</li>
-                            <li class='remove-image' data-id='${parent - index}' onclick='remove(${parent - index})'>Remove Image</li>
+                            <li class='remove-image' data-id='parent-${index}' onclick='remove(${parent - index})'>Remove Image</li>
                         </ul>
 
                     </label>
